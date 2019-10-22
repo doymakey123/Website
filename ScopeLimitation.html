@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+  /*margin-left: 100px;*/
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 100px;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+h1{
+  text-align: center;
+  margin-top: 100px;
+}
+
+#content{
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 150px;
+  
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html"> Home </a>
+  
+
+  <div class="subnav">
+    <button class="subnavbtn"> WBS & Ghantt Chart <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="WBS.html"> WBS </a>
+      <a href="GhantChart.html"> Ghantt Chart </a>
+      <!-- <a href="#careers">Careers</a> -->
+    </div>
+  </div> 
+
+  <div class="subnav">
+        <button class="subnavbtn"> Graphical User Interface (Wireframe) <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="Wireframe1.html"> Wireframe 1 </a>
+          <a href="Wireframe2.html"> Wireframe 2 </a>
+          <a href="Wireframe3.html"> Wireframe 3 </a>
+          <a href="Wireframe4.html"> Wireframe 4 </a>
+          <a href="Wireframe5.html"> Wireframe 5 </a>
+          <a href="Wireframe6.html"> Wireframe 6 </a>
+          <a href="Wireframe7.html"> Wireframe 7 </a>
+          <a href="Wireframe8.html"> Wireframe 8 </a>
+          <a href="Wireframe9.html"> Wireframe 9 </a>
+        </div>
+      </div> 
+
+  <div class="subnav">
+    <button class="subnavbtn"> More <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="TeamContract.html"> Team Contract </a>
+      <a href="ProjectBackground.html"> Project Background </a>
+      <a href="ProjectCharter.html"> Project Charter </a>
+      <a href="ScopeLimitation.html"> Scope & Limitation </a>
+      <a href="BusinessSystemWorkFlow.html"> Business System Workflow </a>
+      <a href="ContextDiagram.html"> Context Diagram </a>
+      <a href="DataFlowDiagram.html"> Data Flow Diagram </a>
+       <a href="ProjectReport.html"> Project Report </a>
+       <a href="LessonLearned.html"> Lesson Learned </a>
+    </div>
+  </div>
+ 
+</div>
+
+<div style="padding:0 16px">
+  <h1> Scope & Limitation </h1>
+</div>
+
+
+<div id="content">
+  <p> <b> I.  Objective: </b></p>
+
+  <ul>
+    <li> The system required log in and log out process </li>
+     <li>The system can add/edit/delete employee’s record </li>
+      <li> The system has a capability to search employee’s record and attendance record</li>
+       <li> The system provide auto generate a unique QR Code for each employee </li>
+        <li> The system provide auto record for daily’s/weekly’s/monthly’s  attendance in a excel sheet </li>
+         <li> The system has a capability to store all deleted employee’s record in history section</li>
+         <li> The system provide a system log for track/trace purposes  </li>
+  </ul>
+  
+</div>
+
+<div id="content">
+  <p> <b> II. Scope  </b></p>
+  <p style="margin-left: 30px;"> 1.0 Security Module </p>
+  <ul>
+    <li style="margin-left: 30px;"> Log-in & Log-out – the system provide a username and password before can use/access the program </li>
+  </ul>
+
+  <p style="margin-left: 30px;"> 2.0  Manage Employee Record Module </p>
+  <ul>
+    <li style="margin-left: 30px;"> Add/Edit/Delete Employee’s Record – this system has a capability to add new employee record, can modified the information record, and also can delete the record(Resign, Got Fired) </li>
+  </ul>
+
+  <p style="margin-left: 30px;"> 3.0  Auto Generate Module </p>
+  <ul>
+    <li style="margin-left: 30px;">  View Generated QR Code – this system provide to store all unique QR Code in the system and the user/client can views for qr each code that have a label/file name of employee </li>
+    <li style="margin-left: 30px;">  Daily/Weekly/Monthly Attendance – this system provide to display all attendance record of each employee</li>
+  </ul>
+
+
+  <p style="margin-left: 30px;"> 4.0  Search Module </p>
+  <ul>
+    <li style="margin-left: 30px;"> Search Bar – this system provide to search an employee record and attendance record </li>
+  </ul>
+
+  <p style="margin-left: 30px;"> 5.0  History Module </p>
+  <ul>
+    <li style="margin-left: 30px;">  History – this system has a capability to store all recently deleted files/employee’s record Resign, Got Fired) </li>
+    <li style="margin-left: 30px;"> System Log – this system provide records for all activities happened in the system </li>
+  </ul>
+  
+</div>
+
+
+<div id="content">
+  <p> <b> III. Limitation: </b></p>
+  <ul>
+    <li>   Only for daily’s attendance </li>
+     <li>  No internet access </li>
+      <li> No calculation for daily income </li>
+       <li>  Limited user(Only for the HR and the Stakeholder) </li>
+       <li>  Only basic information of employee’s record available </li>
+       <li>  Support only in a computer device </li>
+  </ul>
+  
+</div>
+
+
+</body>
+</html>

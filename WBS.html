@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+  /*margin-left: 100px;*/
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 100px;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+h1{
+  text-align: center;
+  margin-top: 100px;
+}
+
+#content{
+  text-align: justify;
+  margin-left: 500px;
+  margin-right: 100px;
+  margin-top: 150px;
+  
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html"> Home </a>
+  
+
+  <div class="subnav">
+    <button class="subnavbtn"> WBS & Ghantt Chart <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="WBS.html"> WBS </a>
+      <a href="GhantChart.html"> Ghantt Chart </a>
+      <!-- <a href="#careers">Careers</a> -->
+    </div>
+  </div> 
+
+  <div class="subnav">
+        <button class="subnavbtn"> Graphical User Interface (Wireframe) <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="Wireframe1.html"> Wireframe 1 </a>
+          <a href="Wireframe2.html"> Wireframe 2 </a>
+          <a href="Wireframe3.html"> Wireframe 3 </a>
+          <a href="Wireframe4.html"> Wireframe 4 </a>
+          <a href="Wireframe5.html"> Wireframe 5 </a>
+          <a href="Wireframe6.html"> Wireframe 6 </a>
+          <a href="Wireframe7.html"> Wireframe 7 </a>
+          <a href="Wireframe8.html"> Wireframe 8 </a>
+          <a href="Wireframe9.html"> Wireframe 9 </a>
+        </div>
+      </div> 
+
+  <div class="subnav">
+    <button class="subnavbtn"> More <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="TeamContract.html"> Team Contract </a>
+      <a href="ProjectBackground.html"> Project Background </a>
+      <a href="ProjectCharter.html"> Project Charter </a>
+      <a href="ScopeLimitation.html"> Scope & Limitation </a>
+      <a href="BusinessSystemWorkFlow.html"> Business System Workflow </a>
+      <a href="ContextDiagram.html"> Context Diagram </a>
+      <a href="DataFlowDiagram.html"> Data Flow Diagram </a>
+       <a href="ProjectReport.html"> Project Report </a>
+       <a href="LessonLearned.html"> Lesson Learned </a>
+    </div>
+  </div>
+ 
+</div>
+
+<div style="padding:0 16px">
+  <h1> Work Breakdown Structure (WBS) </h1>
+</div>
+
+
+<div id="content">
+
+  <p> <b> 1.0 Initiating </b></p>
+  <ul>
+    <li> 1.1  Identify key stakeholders </li>
+     <li> 1.2 Prepare project charter </li>
+      <li> 1.3  Hold project kick-off meeting</li>
+  </ul>
+
+
+  <p> <b> 2.0 Planning </b></p>
+  <ul>
+    <li> 2.1 Hold team planning meeting </li>
+     <li> 2.2 Prepare team contract </li>
+      <li> 2.3  Prepare scope statement </li>
+      <li> 2.4  Prepare WBS </li>
+      <li> 2.5  Prepare schedule and cost baseline
+          <ul>
+            <li> 2.5.1  Determine task resources  </li>
+            <li> 2.5.2  Determine task duration </li>
+            <li> 2.5.3  Determine task dependencies </li>
+            <li> 2.5.4  Create draft Gantt chart </li>
+            <li> 2.5.5  Review and finalize Gantt chart </li>
+          </ul>
+       </li>
+      <li> 2.6  Identify, discuss, and prioritize risks </li>
+  </ul>
+
+
+  <p> <b> 3.0 Executing </b></p>
+  <ul>
+    <li> 3.1  Survey/Observe </li>
+     <li> 3.2 User inputs </li>
+      <li>3.3 Employee Attendance System by QR Scan Content 
+      <ul>
+        <li> 3.3.1  Security Module  </li>
+         <li> 3.3.2 Manage Employee Record Module </li>
+          <li>  3.3.3 Auto Generated Module </li>
+           <li> 3.3.4 Search Module </li>
+           <li> 3.3.5 History Module </li>
+      </ul>
+      </li>
+      <li> 3.4  Creating wireframe  </li>
+      <li> 3.5  Creating design  </li>
+      <li> 3.6  System construction  </li>
+      <li> 3.7  System testing  </li>
+  </ul>
+
+
+
+  <p> <b> 4.0 Monitoring and Controlling </b></p>
+  <ul>
+    <li> 4.1  Progress reports </li>
+  </ul>
+
+
+  <p> <b> 5.0 Closing </b></p>
+  <ul>
+    <li>5.1 Prepare final project report </li>
+    <li>  5.2 Prepare final project presentation </li>
+    <li> 5.3  Lessons learned </li>
+  </ul>
+
+  
+</div>
+
+
+</body>
+</html>

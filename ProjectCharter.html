@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+  /*margin-left: 100px;*/
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 100px;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+h1{
+  text-align: center;
+  margin-top: 100px;
+}
+
+#content{
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 150px;
+  
+}
+
+#content1{
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  
+}
+
+#content2{
+  text-align: justify;
+  margin-left: 280px;
+  margin-right: 100px;
+  margin-top: 50px;
+  
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html"> Home </a>
+  
+
+  <div class="subnav">
+    <button class="subnavbtn"> WBS & Ghantt Chart <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="WBS.html"> WBS </a>
+      <a href="GhantChart.html"> Ghantt Chart </a>
+      <!-- <a href="#careers">Careers</a> -->
+    </div>
+  </div> 
+
+  <div class="subnav">
+        <button class="subnavbtn"> Graphical User Interface (Wireframe) <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="Wireframe1.html"> Wireframe 1 </a>
+          <a href="Wireframe2.html"> Wireframe 2 </a>
+          <a href="Wireframe3.html"> Wireframe 3 </a>
+          <a href="Wireframe4.html"> Wireframe 4 </a>
+          <a href="Wireframe5.html"> Wireframe 5 </a>
+          <a href="Wireframe6.html"> Wireframe 6 </a>
+          <a href="Wireframe7.html"> Wireframe 7 </a>
+          <a href="Wireframe8.html"> Wireframe 8 </a>
+          <a href="Wireframe9.html"> Wireframe 9 </a>
+        </div>
+      </div> 
+
+  <div class="subnav">
+    <button class="subnavbtn"> More <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="TeamContract.html"> Team Contract </a>
+      <a href="ProjectBackground.html"> Project Background </a>
+      <a href="ProjectCharter.html"> Project Charter </a>
+      <a href="ScopeLimitation.html"> Scope & Limitation </a>
+      <a href="BusinessSystemWorkFlow.html"> Business System Workflow </a>
+      <a href="ContextDiagram.html"> Context Diagram </a>
+      <a href="DataFlowDiagram.html"> Data Flow Diagram </a>
+       <a href="ProjectReport.html"> Project Report </a>
+       <a href="LessonLearned.html"> Lesson Learned </a>
+    </div>
+  </div>
+ 
+</div>
+
+<div style="padding:0 16px">
+  <h1> Project Charter </h1>
+</div>
+
+
+<div id="content">
+  <p> <b> Project Title:  </b>  Employee Attendance System by QR Scan </p>
+  <p> <b> Project Start Date:   </b>  June 1, 2019 </p>
+  <p> <b> Project Finish Date:   </b>  October 27, 2019 </p>
+</div>
+
+
+<div id="content1">
+  <p> <b> Budget Information:  </b> This system has allocated PHP 50,000. 00 for this project. The majority of cost for this project will be on usage of the internet (Data usage).  </p>
+</div>  
+
+<div id="content1">
+  <p> <b> Project Manager:  </b>  Timon, Junmark M, +639267978924, junmarktimon@gmail.com  </p> 
+</div>
+
+<div id="content1">
+  <p> <b> Project Objectives:   </b>   </p> 
+
+  <ul>
+    <li> The system required log in and log out process </li>
+    <li> The system can add/edit/delete employee’s record </li>
+    <li> The system has a capability to search employee’s record and attendance record </li>
+    <li> The system provide auto generate a unique QR Code for each employee </li>
+    <li> The system provide auto record for daily’s/weekly’s/monthly’s  attendance in a excel sheet </li>
+    <li> The system has a capability to store all deleted employee’s record in history section </li>
+    <li> The system provide a system log for track/trace purposes </li>
+  </ul>
+</div>
+
+
+<div id="content1">
+  <p> <b> Approach:  </b>  </p>
+  <p style="margin-left: 30px;"> We gathered other related sources to make this project well. This system required an authentication for security purposes. The other features on this system having a limited to manipulate the data. Auto generate for a QR code and other reports and the admin/user can trace using the history log features to monitor what happened on this system. </p>
+</div> 
+
+<div id="content">
+
+  <p style="text-align: center;"> <b> Roles and Responsibilities </b></p>
+
+  <table border="2" style="text-align: center; border-collapse: collapse;" width="800" align="center">
+
+  <tr>
+    <th> Role </th>
+    <th> Name </th>
+     <th> Organization/Position </th>
+      <th>Contact Information </th>
+  </tr>
+
+  <tr>
+    <td> Sponsor </td>
+     <td> Company Owner </td>
+      <td> CEO </td>
+       <td> companyowner@gmail.com </td>
+  </tr>
+
+  <tr>
+    <td> Project Manager </td>
+     <td> Timon, Junmark M </td>
+      <td> IT Manager </td>
+       <td> junmarktimon@gmail.com </td>
+  </tr>
+
+  <tr>
+    <td> Designer </td>
+     <td> Member 1 </td>
+      <td> Senior IT Department</td>
+       <td> member1@gmail.com </td>
+  </tr>
+
+  <tr>
+    <td>  Programmer </td>
+     <td> Member 2 </td>
+      <td> IT Department </td>
+       <td> Member2@gmail.com</td>
+  </tr>
+
+   <tr>
+    <td> Analyst</td>
+     <td> Member 3 </td>
+      <td>IT Department</td>
+       <td> Member2@gmail.com</td>
+  </tr>
+    
+  </table>
+  
+</div>
+
+
+<div id="content2">
+  <p> <b> Sign-off:   </b> (Signatures of all above Stakeholders. Can sign by their names in table above.) </p>
+</div> 
+
+<div id="content2" style="padding-bottom: 100px;">
+  <p> <b> Comments:    </b> (Handwritten or typed comments from above stakeholders, if applicable) </p>
+</div> 
+
+
+</body>
+</html>
+
+ 
